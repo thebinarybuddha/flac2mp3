@@ -22,3 +22,5 @@ printf "OUT FILE:\t$OUTF\n";
 
 `flac -c -d "$FILE" | lame -q 0 -s 48 --id3v2-only --cbr --preset insane - "$OUTF"`;
 `id3v2 -t "$TITLE" -T "$TRACKNUM" -a "$ARTIST" -A "$ALBUM" -y "$DATE" -2 -g "$GENRE" "$OUTF"`;
+
+testing
